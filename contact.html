@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=CenturyGothic:200&display=swap" rel="stylesheet">
+    <title>Sydney's Library</title>
+  </head>
+  <body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+      <img src="images/logo.png" alt="logo" id = "logo">
+      <nav>
+        <ul class="nav_links">
+          <li class="nav_item"><a href="index.html">Home</a></li>
+          <li class="nav_item"><a href="library.html">Library</a></li>
+          <li class="nav_item"><a href="wishlist.html">Wish List</a></li>
+          <li class="nav_item active"><a href="contact.html">Recommendations</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div class="parallax"></div>
+  <main class="about" id="skip" tabindex="0">
+    <div>
+    <h1>Recommendations</h1>
+    <p>Do you have a favorite book? If so let me know what it is so that I can add it to my wish list!</p>
+    <br/>
+    </div>
+    <div class="contactform">
+    <form action="https://formspree.io/f/mwkwnvvy" method="POST">
+
+      <label for="bname">Book Title</label>
+      <input type="text" id="bname" name="booktitle" placeholder="Name of Book" required>
+
+      <label for="aname">Author</label>
+      <input type="text" id="aname" name="author" placeholder="Author Name">
+
+      <label for="genre">Genre</label>
+      <select id="genre" name="genre">
+        <option disabled selected value> Select an Option </option>
+        <option value="fantasy">Fantasy</option>
+        <option value="mystery">Mystery</option>
+        <option value="romance">Romance</option>
+        <option value="nonfiction">Non-Fiction</option>
+        <option value="fiction">Fiction</option>
+        <option value="historicalfiction">Historical Fiction</option>
+        <option value="horror">Horror</option>
+        <option value="actionadventure">Action/Adventure</option>
+        <option value="biography">Biography</option>
+        <option value="scifi">Sci-Fi</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="subject">Short Description</label>
+      <textarea id="subject" name="shortdescription" placeholder="Short Description" style="height:200px"></textarea>
+
+      <input type="submit" value="Suggest">
+
+    </form>
+    </div>
+  </main>
+
+    <footer>
+      <p>Sydney's Library <br/>
+        &copy; Sydney Bruce, Personal Library - Portfolio 2020</p>
+    </footer>
+  </body>
+</html>
